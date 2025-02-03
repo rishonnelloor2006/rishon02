@@ -1,0 +1,42 @@
+
+<html>
+<head>
+  
+       <bR><bR><bR><bR><bR><bR><bR><bR><title>Login Page</title>
+    <link rel="stylesheet" href="C:\Users\addon\Documents\style.css">
+</head>
+<body bgcolor="gray"><center>
+    <img src="logo.jpg" alt="logo" width="300" height="200">
+   
+        <h2>Login</h2>
+                 <h3>Username<br>
+                <input type="text" id="u" name="username" required><br><bR>
+                         Password<br>
+                <input type="password" id="p" name="password" required><br><bR>
+                   <script>
+                   function checking()
+                   {
+                    
+                    let username = document.getElementById("u").value;
+                    let password = document.getElementById("p").value;
+                    let uname = localStorage.getItem("username");
+                    let pass = localStorage.getItem("password");
+                    if(username == uname && password==pass)
+                   {alert("you are valid");
+                    window.location.href="loginedhomepage.html"
+                   }
+                    else { alert("Intruder");}                  
+                 }
+                   
+                   </script>
+                   <input type="submit" onclick="checking()">
+                   <br>
+                   
+    
+            
+<a href="index.html">click here to return to homepage </a><br><br>
+<a href="registationpage.html"> click here if you new user </a><br><br>
+
+
+</center>
+       </body>
